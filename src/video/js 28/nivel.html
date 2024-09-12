@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Kike ABC">
+        <meta name="description" content="videos de práctica">
+        <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+        <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./nivel.css" type="text/css">
+        <title>práctica</title>
+    
+    </head>
+<body>
+    <div id="publicidad"></div>
+    <h3>EVENTOS.</h3>
+    <h4>en cualquier programa existen cosas que pasan, como un clic con el ratón o el presionar de una tecla, que la página se cargue o determinado tiempo transcurra, todo eso (y otros que no he nombrado) se llaman eventos, y podemos manejarlos con javaScript</h4>
+    <h4>vamos a ver esto con ejemplos:</h4>
+    <ul>
+        <li>En el mismo documento creamos una etiqueta "div" para encerrar nuestro ejercicio, esto nos dará una visión objetiva de nuestro trabajo. Creamos dentro de "div" dos "input" cada uno con un atributo "id" y como valor "num1" y "num2" respectivamente.</li>
+        <li>creamos una etiqueta "button" con el atributo "id" y el valor "boton"; como contenido podemos escribir resolver o acción o cualquier cosa.</li>
+        <li>una etiqueta "p" con contenido "resultado"</li>
+        <li>una etiqueta "span" sin contenido, con un atributo "id" de valor "resultado"</li>
+    </ul>
+    <img src="./step01.jpg" alt="">
+    <h4>ahora en el documento "ejercicio.js" haremos lo siguiente:</h4>
+    <ul>
+        <li>declarar una variable, podemos llamarle boton, para saber a qué nos estamos refiriendo y capturar el id respectivo, que sería "boton" (en el documento index.html debe estar el id="boton" en la etiqueta "button")</li>
+        <li>declarar la variable para la etiqueta "span" y capturar también su "id"</li>
+        <li>a la variable botón le vamos a aplicar el método .addEventListener() (literalmente traduce agregaEscuchadorDeEventos)</li>
+        <li>esta parte es interesante: dentro de los paréntesis irá entre comillas el evento, en este caso "click" y separado por una coma crearemos una función; esa función creará dos variables: num1 y num2 que guardaran los elementos "input" con los respectivos "id" que están en el documento HTML y les aplicará el método ".value" que recogerá lo que sea que l usuario escriba dentro del "input"</li>
+        <li>como nota adicional, en javaScript también podemos (y luego verán lo necesario que es) comentar código: para una línea se usa un doble slash: // y para varias líneas se usa igual que en CSS /* y dentro escribimos el lo que sea y no afectará nuestro programa */</li>
+    </ul>
+</body>
+</html>

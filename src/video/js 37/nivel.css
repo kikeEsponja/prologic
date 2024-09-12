@@ -1,0 +1,22 @@
+body{
+    background: initial;
+}
+img{
+    width: 15%;
+}
+img:hover{
+    width: 60%;
+    transition: 1s ease-in;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 1%;
+}
+textarea{
+    resize: none;
+}

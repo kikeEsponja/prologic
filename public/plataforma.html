@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kike ABC">
+    <meta name="description" content="videos de práctica">
+    <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+    <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./desweb.css" type="text/css">
+    <title>cursos</title>
+</head>
+
+<body>
+    <center>
+        <aside>
+            <div class="contenedor-logo">
+                <div class="logo">
+                    <img src="../../src/img/Recurso 10.svg" alt="logotipo">
+                </div>
+                <ul class="menu">
+                    <li class="btn btn-dark" id="btnPlanes">planes</li>
+                    <li class="btn btn-info">mis cursos</li>
+                </ul>
+            </div>
+
+            <div class="contenedor-nav">
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Qué curso estás buscando?" class="btn btn-light">
+                    </form>
+                    <div id="infoUsuario">
+                        <h2>Información del usuario</h2>
+                        <p>nombre: <span id="usuarioNombre"></span></p>
+                    	<p>fecha: <span id="usuarioFecha"></span></p>
+                    	
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="circulo-segundo">
+                    <div style="margin: 2%;">
+                        <img src="../../src/img/logoparami2.jpg" class="circulo">
+                    </div>
+                    <div>
+                        <h3>DESARROLLO WEB</h3>
+                        <p style="text-align: justify;">Este material está diseñado para personas realmente principiantes. Qué significa ser realmente principante? sencillo, aquellos que no tienen ni idea de programación. En la mayora de los cursos y bootcamps se parte de la idea de que un principiante tiene ciertos conocimientos previos y muchos terminan por comprender que no es así. Por eso, en este apartado se tratará el tema desde lo que llamo "el cero absoluto" que consiste en, simplemente, crear una carpeta. A partir de ahí, el resto.</p>
+						<button onclick="showModal()">Pagá con MODO</button>
+                	</div>
+                </div>
+            </div>
+        </aside>
+
+        <h1 id="inicio">Desarrollo web</h1>
+        <div id="publicidad"></div>
+
+        <div class="contenedor-nivel text-start">
+
+            <div class="card" style="width: 18rem;">
+                <a><img src="../../src/img/html.png" class="card-img-top" alt="..." id="suscrip-html"></a>
+                <div class="card-body circulo-segundo">
+                    <div class="circulo-videos"></div>
+                    <div>
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Primer tramo, 13 videos con descripción adicional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <a><img src="../../src/img/css.webp" class="card-img-top" alt="..." id="suscrip-css"></a>
+                <div class="card-body circulo-segundo">
+                    <div class="circulo-videos"></div>
+                    <div>
+                        <h5 class="card-title">CSS3</h5>
+                        <p class="card-text">Segundo tramo, 20 videos con descripcin adicional.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <a><img src="../../src/img/js.jpeg" class="card-img-top" alt="..." id="suscrip-js"></a>
+                <div class="card-body circulo-segundo">
+                    <div class="circulo-videos"></div>
+                    <div>
+                        <h5 class="card-title">javaScript</h5>
+                        <p class="card-text">ltimo tramo, 27 videos con descripcin adicional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        
+        <h2>Computación</h2>
+        <div id="publicidad"></div>
+        
+            <div class="contenedor-nivel text-start">
+                <div class="card">
+                    <a><img src="../../src/img/computacion.png" class="card-img-top" alt="..." id="suscrip-computacion" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">Bases generales</h5>
+                            <p class="card-text">Primer tramo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a><img src="../../src/img/windows.jpg" class="card-img-top" alt="..." id="suscrip-windows" data-bs-toggle="modal" data-bs-target="#exampleModal-css"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">Windows</h5>
+                            <p class="card-text">Segundo tramo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a><img src="../../src/img/office.webp" class="card-img-top" alt="..." id="suscrip-office" data-bs-toggle="modal" data-bs-target="#exampleModal-js"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">Office</h5>
+                            <p class="card-text">Último tramo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <button class="btn btn-warning cerrar" id="cerrar" onclick="cerrarSesion()">cerrar sesión</button>
+        <div id="botones"></div>
+
+    	<footer>
+            <div class="footer-logo">
+                <img src="../src/img/Recurso 10.svg" alt="logo">
+            	<div>
+                	<a href="https://www.instagram.com/fortrainevolution?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="bi bi-instagram"></i></a>
+                	<a href="https://www.facebook.com/profile.php?id=61554944852878" target="_blank"><i class="bi bi-facebook"></i></a>
+                	<a href="https://fortrainevolution.com" target="_blank"><i class="bi bi-globe"></i></a>
+            	</div>
+                <p>Encuentranos en las redes.</p>
+            </div>
+            <div class="footer-secciones">
+                <h3 class="footer-h3">secciones</h3>
+                <ul>
+                    <li class="btn btn-dark"><a href="#" style="text-decoration: none;" class="text-light">inicio</a></li>
+                    <li class="btn btn-dark btnPlanes">planes</li>
+                    <!--<li class="btn btn-warning btnRegistro">registro</li>
+                    <li class="btn btn-success btnAcceso">acceso</li>-->
+                    <li class="btn btn-dark btnWeb">sobre la web</li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3 class="footer-h3" id="contact">contacto</h3>
+                <ul class="contacto">
+                	<i class="bi bi-envelope"></i>
+                    <li>contact@fortrainevolution.com</li>
+                	<i class="bi bi-telephone"></i>
+                    <li>+549-11-12345678</li>
+                	<i class="bi bi-geo-alt"></i>
+                    <li>Av. Santa Fe 2050. B.A. Argentina</li>
+                </ul>
+                <ul class="contacto-tlf">
+                    <li class="hint hint--top" aria-label="contact@fortrainevolution.com"><i class="bi bi-envelope"></i>correo</li>
+                    <li class="hint hint--top" aria-label="+54 914 123 456"><i class="bi bi-telephone"></i>teléfono</li>
+                    <li class="hint hint--top" aria-label="Av. Santa Clara 5555. B.A. Argentina"><i class="bi bi-geo-alt"></i>dirección</li>
+                </ul>
+            </div>
+        </footer>
+    </center>
+
+	<script src="https://ecommerce-modal.modo.com.ar/bundle.js"></script>
+	<script src="./modo.js"></script>
+    <script src="./plataforma.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

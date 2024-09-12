@@ -1,0 +1,35 @@
+var dia = prompt("elige un día");
+
+switch(dia){
+	case "lunes":
+	alert("a trabajar");
+	break;
+
+	case "martes":
+	alert("a trabajar otra vez");
+	break;
+
+	case "miercoles":
+	alert("a trabajar una vez más");
+	break;
+
+	case "jueves":
+	alert("a trabajar, pero ya falta menos");
+	break;
+
+	case "viernes":
+	alert("a trabajar, y luego a la disco");
+	break;
+
+	case "sabado":
+	alert("con los compas y disco y fiesta");
+	break;
+
+	case "domingo":
+	alert("a misa y a dormir");
+	break;
+
+	default:
+	alert("día no existe");
+	break;
+}

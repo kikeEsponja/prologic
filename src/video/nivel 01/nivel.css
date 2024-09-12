@@ -1,0 +1,30 @@
+body{
+    background: initial;
+}
+img{
+    width: 15%;
+}
+img:hover{
+    width: 60%;
+    transition: 1s ease-in;
+}
+.practicando{
+	text-decoration: underline;
+}
+.aqui{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: #f00;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.aqui:hover{
+    width: 100px;
+    height: 100px;
+	transition: 1s ease-in;
+}

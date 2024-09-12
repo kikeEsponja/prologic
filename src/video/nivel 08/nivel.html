@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Kike ABC">
+        <meta name="description" content="videos de práctica">
+        <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+        <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./nivel.css" type="text/css">
+        <title>práctica</title>
+    </head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-warning">
+      	<h2 class="text-danger">BIEN HECHO!</h2>
+      </div>
+      <div class="modal-footer bg-warning">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div>
+		<h3>Continuamos con RUTAS</h3>
+    	<h4>En esta oportunidad explicaré cómo enlazar archivos (imágenes en este caso) desde internet sin tener que guardar en nuestro ordenador. Es tan simple como encontrar la imagen deseada en internet y clicar con el botón derecho del ratón y elegir la opción "copiar vínculo"</h4>
+    	<h4>Lo que vamos a hacer ahora es crear otra etiqueta "img" con su atributo "src" y como valor vamos a usar ese enlace que copiamos, así que ubicamos el cursor del ratón en medio de las comillas y pegamos, listo.</h4>
+    	<h4>Nuestras imágenes se ven demasiado grandes, así que usaremos el atributo "width" para modificar su tamaño, el valor de "width" será la medida que queramos que tenga la imagen, puede ser en píxeles(px), porcentaje(%) u otra medida que ya se encargarán ustedes de averiguar. Yo les colocaré sólo 50%</h4>
+    	<h4>En la pestaña archivo seleccionamos la opción guardar y listo.</h4>
+	</div>
+	<br>
+
+<div class="ejercicio">
+    <h3 class="text-warning practicando">Practiquemos un poco: </h3>
+    <form>
+    	<h4>crea una etiqueta simple para contener imágenes, el atributo <span class="text-light">"src"</span> tendrá como valor la ruta hasta la imágen <span class="text-light">"perro.jpg"</span> que está en una sub-carpeta llamada <span class="text-light">"imagen"</span></h4>
+        <label for="etiqueta">imagen</label>
+        <input type="text" id="etiqueta" class="evaluacion">
+        <br>
+    	<h4>crea otra etiqueta de imagen cuyo atributo <span class="text-light">"src"</span> tendrá como valor la ruta hasta el archivo llamado <span class="text-light">"imagen_principal.jpg"</span> que está en la carpeta principal llamada <span class="text-light">"principal"</span>, asume que la etiqueta se creará en el archivo que se encuentra en la sub-carpeta <span class="text-light">"imagen"</span></h4>
+        <label for="boton">imagen</label>
+        <input type="text" id="boton" class="evaluacion">
+        <div>
+            <button type="button" id="evaluar">evaluar</button>
+            <button type="button" id="confirmar" data-bs-toggle="modal" data-bs-target="#exampleModal">confirmar</button>
+        </div>
+    </form>
+</div>
+
+	<script src="./nivel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

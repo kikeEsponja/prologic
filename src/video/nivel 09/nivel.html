@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Kike ABC">
+        <meta name="description" content="videos de práctica">
+        <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+        <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./nivel.css" type="text/css">
+        <title>práctica</title>
+    </head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-warning">
+      	<h2 class="text-danger">BIEN HECHO!</h2>
+      </div>
+      <div class="modal-footer bg-warning">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div>
+		<h3>Enlaces (links)</h3>
+    	<h4>Conozcamos la etiqueta "a" que sirve para crear enlaces. Para funcionar, esta etiqeuta tiene un atributo "href" cuyo valor será la ruta a la que deseamos ir. Así: &lt;a href="https://ruta_de_internet">enlace&lt;/a> o &lt;a href="ruta_de_nuestro_proyecto">enlace&lt;/a></h4>
+    	<h4>Vamos a construir una etiqueta "a" con su respectivo atributo "href" que nos lleve a, por ejemplo, wikipedia. Si sabemos que la dirección de wikipedia es https://wikipedia.com, ese entonces será el valor del atributo "href" de la etiqueta "a"</h4>
+    	<img src="./step01.png" class="imagen">
+    	<h4>Excelente, ahora vamos a crear otro enlace, pero esta vez para una sección diferente dentro de nuestro mismo proyecto (otra página). Para ello, vamos a crear otra página web, de la misma forma que creamos index.html. Esta vez le llamaremos simplemente dos (dos.html). Y vamos a crear la misma estructura. Para facilitar las cosas, les voy a dejar una imagen con una plantilla que pueden usar para cualquier proyecto.</h4>
+    	<img src="./step02.png" class="imagen">
+    	<h4>Ok, les explico brevemente: en la plantilla hay dos etiquetas "meta" y están en la plantilla porque no veo la necesidad de que se aprendan esto de memoria, más sí de que las escriban cada vez que vayan a hacer un proyecto, de esta manera, de tanto hacerlo, terminan por aprenderselo. Cada etiqueta "meta" tiene atributos y valores, en la primera, el atributo "charset" tiene como valor "UTF-8" que permite a nuestra página, que está hecha en latino américa, aceptar los acentos, diéresis, eñes y otros (pueden probar a escribir algo con estos caracteres sin la etiqueta mencionada para que vean el resultado). Y la segunda etiqueta tiene el atributo "name" con el valor "viewport" que le dice al navegador que va a usar la pantalla, y el atributo "content" con el valor "width=device-width, initial-scale=1.0" para indicar que ese viewport sea de escala 1 = 1. También he agregado una etiqueta "title" con un título que aparecerá en la pestaña, simplemente.</h4>
+    	<h4>Esa etiqueta extraña que está en medio de la etiqueta "body" es lo que se conoce como un comentario y todo lo que vaya entre esas dos simbologías (&lt;!-- y -->) será ignorado y no se mostrará.</h4>
+    	<h4>Bien, podemos dejar el comentario o eliminarlo, porque enseguida vamos a agregar una etiqueta "h1" y escribiremos cualquier cosa, yo escribiré página dos. Guardamos y volvemos a nuestro archivo index.html para agregar la otra etiqueta "a" con su atributo "href" cuyo valor será la ruta hasta nuestro archivo dos.html.</h4>
+    	<img src="./step01.png" class="imagen">
+    	<h4>Para que practiquen, les dejaré que, en la página dos.html agregen un enlace que nos permita volver a index.html.</h4>
+    	<h4>En index.html van a crear otro enlace, al final de todo, que nos permita simplemente ir hasta arriba sin tener que hacer scroll con el ratón (mover la ruedita del medio)</h4>
+	</div>
+	<br>
+
+	<div class="ejercicio">
+    	<h3 class="text-warning practicando">Practiquemos un poco: </h3>
+    	<h4>Identifica cuál es la forma correcta de crear una etiqueta de enlace:</h4>
+    	<div class="aqui" id="miboton">
+        	<p>elije la respuesta correcta:</p>
+        	<button type="button" class="mal" id="mal1">a- &lt;a src="./ruta_a_archivo">enlace&lt;/a></button>
+        	<button type="button" class="mal" id="mal2">b- &lt;a>href="./ruta_a_archivo" + enlace&lt;/a></button>
+        	<button type="button" class="mal" id="mal3">c- &lt;a ir="./ruta_a_archivo">enlace&lt;/a></button>
+        	<button type="button" id="bien" data-bs-toggle="modal" data-bs-target="#exampleModal">d- &lt;a href="./ruta_a_archivo">enlace&lt;/a></button>
+    	</div>
+	</div>
+	<br>
+
+	<div class="ejercicio">
+    	<h4>Una etiqueta <span class="text-light">&lt;a></span> puede tener más de un atributo?</h4>
+    	<div class="aqui" id="miboton">
+        	<p>elije la respuesta correcta:</p>
+        	<button type="button" class="mal" id="mal4">a- Sí, pero sólo uno más aparte del atributo "src"</button>
+        	<button type="button" class="mal" id="mal5">b- No, la etiqueta &lt;a> no debe contener ningún atributo</button>
+        	<button type="button" class="mal" id="bien" data-bs-toggle="modal" data-bs-target="#exampleModal">c- Sí, como el resto de las etiquetas</button>
+        	<button type="button" class="mal" id="mal6">d- No, la etiqueta &lt;a> sólo puede contener el atributo "src"</button>
+    	</div>
+	</div>
+
+	<script src="./nivel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

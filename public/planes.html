@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kike ABC">
+    <meta name="description" content="videos de práctica">
+    <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+    <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/desweb.css" type="text/css">
+    <title>práctica</title>
+
+</head>
+<body>
+
+    <center>
+        <aside>
+            <div class="contenedor-logo">
+                <div class="logo">
+                    <img src="../../src/img/Recurso 10.svg" alt="logotipo" class="logotipo">
+                </div>
+                <ul class="menu-tlf">
+                    <li class="btn btn-dark" onclick="goBack()">volver</li>
+                    <li id="btnRegistro-tlf"><a href="./server/registro.html">registro</a></li>
+                    <li id="btnAcceso-tlf"><a href="./server/login.html">acceso</a></li>
+                    <li class="btn btn-dark" id="btnWeb-tlf">sobre la web</li>
+                </ul>
+                
+                <ul class="menu">
+                    <li class="btn btn-dark" onclick="goBack()">volver</li>
+                    <li class="btn btn-warning btnRegistro" id="btnRegistro">registro</li>
+                    <li class="btn btn-success btnAcceso" id="btnAcceso">acceso</li>
+                    <li class="btn btn-dark" id="btnWeb">sobre la web</li>
+                </ul>
+            </div>
+
+            <div class="contenedor-nav">
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Qué curso ests buscando?" class="btn btn-light">
+                        <div class="aprender">
+                            <!--<video src="./src/img/2024-05-11 01-02-55.mkv" class="video-uno" loop id="video-uno"></video>-->
+                        </div>
+                    </form>
+                </div>
+
+                <br>
+            
+                <div class="circulo-segundo">
+                    <div>
+                        <img src="../../src/img/logoparami2.jpg" class="circulo" alt="logo">
+                    </div>
+                    <div>
+                        <h3>DESARROLLO WEB</h3>
+                        <p>Planes adaptados para todas las necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <h1 id="inicio">Desarrollo web</h1>
+        <div id="publicidad"></div>
+        
+            <div class="contenedor-nivel text-start">
+                <div class="card">
+                    <a><img src="../../src/img/html.png" class="card-img-top" alt="..." id="suscrip-html" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Primer tramo, 13 videos con descripcin adicional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a><img src="../../src/img/css.webp" class="card-img-top" alt="..." id="suscrip-css" data-bs-toggle="modal" data-bs-target="#exampleModal-css"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">CSS3</h5>
+                            <p class="card-text">Segundo tramo, 20 videos con descripcin adicional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a><img src="../../src/img/js.jpeg" class="card-img-top" alt="..." id="suscrip-js" data-bs-toggle="modal" data-bs-target="#exampleModal-js"></a>
+                    <div class="card-body circulo-segundo">
+                        <div class="circulo-videos"></div>
+                        <div>
+                            <h5 class="card-title">javaScript</h5>
+                            <p class="card-text">ltimo tramo, 27 videos con descripcin adicional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="../../src/img/Recurso 10.svg" alt="logo">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
+                <p>lorem ipsum alea jacta est.</p>
+            </div>
+            <div class="footer-secciones">
+                <h3 class="footer-h3">secciones</h3>
+                <ul>
+                    <li class="btn btn-dark"><a href="#">inicio</a></li>
+                    <li class="btn btn-warning btnRegistro">registro</li>
+                    <li class="btn btn-success btnAcceso">acceso</li>
+                    <li class="btn btn-dark" onclick="goBack()">volver</li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3 class="footer-h3">contacto</h3>
+                <ul>
+                    <li><i class="bi bi-envelope"></i>contact@fortrainevolution.com</li>
+                    <li><i class="bi bi-telephone"></i>+54 914 123 456</li>
+                    <li><i class="bi bi-geo-alt"></i>Av. Santa Fe 2050. B.A. Argentina</li>
+                </ul>
+            </div>
+        </footer>
+
+    </center>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+                window.voiceflow.chat.load({
+                verify: { projectID: '66087f2796c84563eac71bb3' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+            });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+    <script>
+        /*const suscripHtml = document.getElementById('suscrip-html');
+        suscripHtml.addEventListener('click', function(){
+            window.location.href = 'HTML.html';
+        })
+
+        const suscripCss = document.getElementById('suscrip-css');
+        suscripCss.addEventListener('click', function(){
+            window.location.href = 'suscripcion.html?curso=CSS&precio=1000';
+        })
+
+        const suscripJs = document.getElementById('suscrip-js');
+        suscripJs.addEventListener('click', function(){
+            window.location.href = 'suscripcion.html?curso=JavaScript&precio=1500';
+        })*/
+        
+        const accesos = document.querySelectorAll('.btnAcceso');
+        const irAcceso = () => {
+            window.location.href = './server/login.html';
+        }
+        accesos.forEach(boton =>{
+            boton.addEventListener('click', irAcceso);
+        });
+        
+        const registros = document.querySelectorAll('.btnRegistro');
+        const irRegistro =()=>{
+            window.location.href = './server/registro.html';
+        }
+        registros.forEach(boton =>{
+            boton.addEventListener('click', irRegistro);
+        });
+    </script>
+    <script src="../javascript/funciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

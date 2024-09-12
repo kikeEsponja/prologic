@@ -1,0 +1,40 @@
+body{
+    background: initial;
+}
+.imagen{
+    width: 120px;
+    height: 120px;
+}
+.imagen:hover{
+    width: 60%;
+    height: 60%;
+    transition: 1s ease-in;
+}
+.small{
+    width: 25%;
+    height: 25%;
+}
+.modal{
+	top: 60%;
+}
+.ejercicio{
+	width: 50%;
+	display:flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+.evaluacion{
+	width: 100%;
+}
+form > div{
+	display:flex;
+}
+button{
+	border-radius: 6px;
+}
+.practicando{
+	text-decoration: underline;
+}
+#confirmar{
+	display: none;
+}

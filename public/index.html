@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Visitantes</title>
+</head>
+<body>
+    <h3>eres el visitante: <span id="visitante"></span></h3>
+    
+    <script>
+        fetch('https://leeresmipasion.com:1045/visitas')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visitante').innerText = data.visitas;
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

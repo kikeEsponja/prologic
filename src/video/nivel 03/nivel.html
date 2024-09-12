@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Kike ABC">
+        <meta name="description" content="videos de práctica">
+        <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+        <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./nivel.css" type="text/css">
+        <title>práctica</title>
+    </head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-warning">
+      	<h2 class="text-danger">BIEN HECHO!</h2>
+      </div>
+      <div class="modal-footer bg-warning">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div>
+        <h4>Es momento de aplicar lo que hemos aprendido y construir nuestra primera página web. Es tan, pero tan sencillo como crear un archivo dentro de nuestra carpeta con el bloc de notas, ponerle un nombre y la extensión html. (sí, así de simple). Yo crearé uno y lo llamaré pagina. <br><img class="imagen" src="./step01.png"> <img class="imagen" src="./step02.png"></h4>
+    	<h4>Al hacer doble clic en nuestro nuevo archivo, y según lo que hemos aprendido, la aplicación predeterminada para abrir archivos con esta extensión es el navegador o browser (en inglés). Obviamente lo que veremos será una página en blanco.</h4>
+    	<img class="imagen" src="./step03.png">
+    	<br>
+    	<h4>Comprendido esto, vamos a poner cosas dentro de este espacio en blanco, entonces es cuando toca un nuevo objetivo: ETIQUETAS</h4>
+    	<h4>Las etiquetas son el componente principal que conforma el contenido de una página web, vamos a ver dos tipos: simples y compuestas</h4>
+    	<ul>
+        	<li>las simples se construyen encerrando el nombre de la etiqueta entre dos símbolos de mayor qué y menor qué. Así: &lt; nombre > &lt;nombre></li>
+        	<li>las compuestas se construyen con una etiqueta simple que abre y otra que cierra; a la etiqueta de cierre, le agregamos una barra invertida o slash antes del nombre. Así: &lt; nombre > &lt;/ nombre ></li>
+        	<li>Generalmente, este tipo de etiquetas encierra algún tipo de contenido: &lt; nombre > contenido &lt;/ nombre ></li>
+    	</ul>
+    	<h4>Teniendo esto claro, podemos hablar del siguiente tema: el INDENTADO</h4>
+    	<h4>No es más que una sangría, un margen que dejamos para que nuestro código sea entendible, como todo, tiene sus reglas, y para entenderlas, es necesario ver a las etiquetas como unas cajas que contienen cosas, incluso otras etiquetas, veamos cómo funciona el indentado con otro concepto: Padres e hijos (o hijas)</h4>
+    	<h4>Con el indentado podemos saber cuales elementos son padres y cuales los hijos. Podemos tomar el ejemplo de la etiqueta nombre que creamos anteriormente y la escribimos así: <img class="small" src="./step04.png"> ese espacio que diferencia contenido de las etiquetas "nombre" se llama indentado, y podemos decir que "contenido es hijo (o hija) de "nombre"</h4>
+    	<h4>ANIDACIÓN es otro término muy usado y sólo quiere explicar la colocación de elementos dentro de otro elemento, así como una caja dentro de otra caja. Crearé una etiqueta llamada "caja" y dentro, anidaré la etiqueta "nombre" <img class="small" src="./step05.png"> Así "caja" es padre de "nombre"</h4>
+	</div>
+	<br>
+
+	<div class="ejercicio">
+    	<h3 class="text-warning practicando">Practiquemos un poco: </h3>
+    	<form>
+        	<label for="etiqueta">crea una etiqueta simple para contener imágenes:</label>
+        	<input type="text" id="etiqueta" class="evaluacion">
+        	<br>
+            <label for="boton">crea una etiqueta compuesta para crear un botón que se llame nombre:</label>
+        	<input type="text" id="boton" class="evaluacion">
+        	<div>
+        		<button type="button" id="evaluar">evaluar</button>
+        		<button type="button" id="confirmar" data-bs-toggle="modal" data-bs-target="#exampleModal">confirmar</button>
+        	</div>
+    	</form>
+	</div>
+
+	<script src="./nivel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

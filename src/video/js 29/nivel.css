@@ -1,0 +1,10 @@
+body{
+    background: initial;
+}
+img{
+    width: 15%;
+}
+img:hover{
+    width: 60%;
+    transition: 1s ease-in;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Kike ABC">
+        <meta name="description" content="videos de prctica">
+        <meta name="google-adsense-account" content="ca-pub-8575631442589730">
+        <link rel="shortcut icon" href="./src/img/logoparami2.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./nivel.css" type="text/css">
+        <title>práctica</title>
+    
+    </head>
+<body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-primary">
+      	<h2 class="text-warning">BIEN HECHO!</h2>
+      </div>
+      <div class="modal-footer bg-primary">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div>
+		<h3>Cambiando colores y conociendo otros selectores.</h3>
+    	<h4>vamos a cambiar de nuevo el color al título y agregar un fondo a toda la página, gris, por ejemplo (recuerden que todo esto se maneja en inglés).</h4>
+    	<h4>para esto, seleccionamos la etiqueta "body" y establecemos dentro de las llaves, la regla background : grey;</h4><img class="imagen" src="./step01.png">
+    	<h4>En CSS también podemos comentar código para que podamos escribir sin afectar nuestro proyecto, en este caso, encerramos nuestro comentario entre los símbolos asterisco y barra invertida, así: /* aquí el comentario */</h4>
+    	<h4>Vamos a crear dos etiquetas "h2" y le vamos a escribir un texto, yo escribiré "trabajando con clases", y al aplicar la regla color: red; ambos "h2" van a cambiar, para cambiar sólo el "h2" que deseamos, usaremos el atributo "class" o "id" con un valor que se nos haga fácil identificar. La diferencia entre estos dos atributos radica en que el atributo "id" no puede repetirse mientras que el atributo class, sí.</h4>
+    	<h4>por ahora usarmemos el atributo "class" y se lo colocaremos a uno de los dos "h2", luego, en el documento estilo.css escribiremos la regla color: red; sobre el selector de clases "." (es decir, un punto)</h4>
+    	<img src="./step02.png" class="imagen">
+    	<br>
+    	<img src="./step03.png" class="imagen">
+	    <h4>el atributo "id" funciona igual, pero para usarlo en CSS se usa el símbolo numeral o hashtag (#) entonces seguido del nombre del id que le hemos colocado al elemento.</h4>
+	</div>
+    
+	<div class="ejercicio">
+    	<h3 class="text-warning practicando">Practiquemos un poco: </h3>
+    	<h4>El valor del atributo class puede ser nombrado de cuaquier forma?</h4>
+    	<div class="aqui" id="miboton">
+        	<p>elije la respuesta correcta:</p>
+        	<button type="button" id="bien" data-bs-toggle="modal" data-bs-target="#exampleModal">a- Sí, pero no debe haber espacios si el nombre tiene más de una palabra</button>
+        	<button type="button" id="mal2">b- No, existen palabras predeterminadas para nombrar el valor de un atributo class</button>
+        	<button type="button" id="mal1">c- Sí, puede tener cualquier nombre</button>
+        	<button type="button" id="mal3">d- el atributo class no debe contener ningún valor</button>
+    	</div>
+	</div>
+
+	<script src="./nivel.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
